@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>등대독서회 - ㈜제주비 사내 독서 동호회</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        book: {
+                            base: '#FBF9F5',    /* 웜 아이보리 베이스 */
+                            card: '#F4EFEA',    /* 카드 배경 톤 */
+                            dark: '#3E2723',    /* 딥 브라운 포인트 텍스트 */
+                            amber: '#D97706',   /* 머스터드/앰버 포인트 */
+                            accent: '#8C6D62',  /* 서브 포인트 브라운 */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Pretendard', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Pretendard', sans-serif; background-color: #FBF9F5; color: #3E2723; }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-100 selection:text-book-dark">
+
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 bg-[#FBF9F5]/90 backdrop-blur-md border-b border-[#EFECE6]">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg text-book-dark flex items-center gap-2">
+                <span class="text-xl">🏮</span> 등대독서회 <span class="text-xs font-normal px-2 py-0.5 rounded-full bg-amber-100 text-book-amber">㈜제주비</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-stone-600">
+                <a href="#about" class="hover:text-book-amber transition">소개</a>
+                <a href="#info" class="hover:text-book-amber transition">모임안내</a>
+                <a href="#books" class="hover:text-book-amber transition">추천도서</a>
+                <a href="#benefits" class="hover:text-book-amber transition">혜택 및 후기</a>
+            </nav>
+            <a href="#apply" class="bg-book-dark text-white text-sm px-4 py-2 rounded-xl font-medium hover:bg-stone-800 transition shadow-sm">가입 신청</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
+        <div class="inline-flex items-center gap-2 bg-amber-100/70 text-book-amber text-xs font-semibold px-3.5 py-1.5 rounded-full mb-6 border border-amber-200/50">
+            <span>✨</span> ㈜제주비 사내 독서 동호회 코지 라운지
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-book-dark mb-6 leading-tight">
+            삶의 항해를 밝히는 지혜,<br><span class="text-book-amber">등대독서회</span>
+        </h1>
+        <p class="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+            바쁜 주중 업무 속, 매주 금요일 오전 2시간 동안 나와 동료를 위해 켜두는 따뜻한 작은 등대입니다.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#info" class="bg-book-dark text-white px-8 py-3.5 rounded-2xl font-medium hover:bg-stone-800 transition shadow-md">모임 안내 둘러보기</a>
+            <a href="#apply" class="border border-stone-300 bg-white/50 px-8 py-3.5 rounded-2xl font-medium hover:bg-stone-100 transition text-book-dark">지금 바로 참여하기</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="bg-book-card rounded-3xl p-8 md:p-12 border border-[#EBE3DC]">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="text-book-amber font-semibold text-sm tracking-widest uppercase mb-2 block">About Us</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-book-dark mb-6">"일과 삶의 균형을 잡는 우리만의 작은 독서 항해"</h2>
+                <p class="text-stone-700 leading-relaxed mb-8 text-base md:text-lg">
+                    등대독서회는 거친 업무 바다 속에서 잠시 닻을 내리고, 책을 통해 새로운 시각을 넓히며 서로의 생각을 나누는 사내 소통의 공간입니다. 혼자 읽기 힘들었던 책도 좋은 동료들과 함께라면 완독의 즐거움과 깊은 인사이트를 얻을 수 있습니다.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-white/70 p-6 rounded-2xl border border-[#EBE3DC]">
+                    <div class="text-2xl mb-3">📖</div>
+                    <h3 class="font-bold text-base text-book-dark mb-1">함께 읽는 즐거움</h3>
+                    <p class="text-stone-600 text-sm">미뤄두었던 완독의 목표를 동료들과 함께 자연스럽게 달성합니다.</p>
+                </div>
+                <div class="bg-white/70 p-6 rounded-2xl border border-[#EBE3DC]">
+                    <div class="text-2xl mb-3">💬</div>
+                    <h3 class="font-bold text-base text-book-dark mb-1">수평적 소통</h3>
+                    <p class="text-stone-600 text-sm">직급과 부서를 넘어 책 속의 주제로 자유롭고 깊이 있는 이야기를 나눕니다.</p>
+                </div>
+                <div class="bg-white/70 p-6 rounded-2xl border border-[#EBE3DC]">
+                    <div class="text-2xl mb-3">☕</div>
+                    <h3 class="font-bold text-base text-book-dark mb-1">금요일의 쉼터</h3>
+                    <p class="text-stone-600 text-sm">한 주의 피로를 풀고 신선한 활력을 충전하는 리프레시 타임입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meeting Info Section -->
+    <section id="info" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <span class="text-book-amber font-semibold text-sm tracking-widest uppercase mb-2 block">Schedule & Place</span>
+            <h2 class="text-3xl font-bold text-book-dark">모임 안내 및 타임라인</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-3xl border border-[#EBE3DC] shadow-sm text-center">
+                <div class="w-12 h-12 bg-amber-100 text-book-amber rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl">👥</div>
+                <h3 class="font-bold text-lg text-book-dark mb-2">참가 대상</h3>
+                <p class="text-stone-600 text-sm">㈜제주비 임직원 누구나<br>(책을 사랑하는 마음만 있다면 초보 환영!)</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-[#EBE3DC] shadow-sm text-center">
+                <div class="w-12 h-12 bg-amber-100 text-book-amber rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl">⏰</div>
+                <h3 class="font-bold text-lg text-book-dark mb-2">정기 모임</h3>
+                <p class="text-stone-600 text-sm">매주 금요일<br>11:00 ~ 13:00 (점심 포함)</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-[#EBE3DC] shadow-sm text-center">
+                <div class="w-12 h-12 bg-amber-100 text-book-amber rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl">📍</div>
+                <h3 class="font-bold text-lg text-book-dark mb-2">모임 장소</h3>
+                <p class="text-stone-600 text-sm">본관 3층 회의실<br>(아늑하고 집중도 높은 공간)</p>
+            </div>
+        </div>
+
+        <!-- Timeline Box -->
+        <div class="bg-white rounded-3xl p-8 border border-[#EBE3DC] shadow-sm">
+            <h3 class="font-bold text-lg text-book-dark mb-6 text-center">⏳ 모임 진행 순서 (2시간 코스)</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border-l-2 border-book-amber pl-4">
+                    <span class="text-xs font-semibold text-book-amber">11:00 ~ 11:15</span>
+                    <h4 class="font-bold text-book-dark mt-1">브런치 & 안부 나누기</h4>
+                    <p class="text-stone-600 text-sm mt-1">가벼운 점심 식사와 함께 한 주간의 안부를 나누며 긴장을 푸는 시간</p>
+                </div>
+                <div class="border-l-2 border-book-amber pl-4">
+                    <span class="text-xs font-semibold text-book-amber">11:15 ~ 12:30</span>
+                    <h4 class="font-bold text-book-dark mt-1">인사이트 & 하브루타 토론</h4>
+                    <p class="text-stone-600 text-sm mt-1">지정 도서의 핵심 내용 공유 및 자유로운 질문과 토론 진행</p>
+                </div>
+                <div class="border-l-2 border-book-amber pl-4">
+                    <span class="text-xs font-semibold text-book-amber">12:30 ~ 13:00</span>
+                    <h4 class="font-bold text-book-dark mt-1">다음 도서 선정 및 마무리</h4>
+                    <p class="text-stone-600 text-sm mt-1">다음 주 읽을 분량 안내 및 기념 사진 촬영 후 모임 종료</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <span class="text-book-amber font-semibold text-sm tracking-widest uppercase mb-2 block">Bookshelf</span>
+            <h2 class="text-3xl font-bold text-book-dark">이달의 추천 도서 라인업</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-book-card p-6 rounded-3xl border border-[#EBE3DC]">
+                <div class="bg-stone-200 h-48 rounded-2xl mb-4 flex items-center justify-center text-stone-400 font-medium">📚 도서 표지 이미지</div>
+                <span class="text-xs font-semibold bg-amber-100 text-book-amber px-2.5 py-1 rounded-full">이번 주 선정 도서</span>
+                <h3 class="font-bold text-lg text-book-dark mt-3 mb-1">불변의 법칙</h3>
+                <p class="text-stone-600 text-sm">모건 하우절 지음 | 부와 성공, 그리고 겸손에 관하여</p>
+            </div>
+            <div class="bg-book-card p-6 rounded-3xl border border-[#EBE3DC]">
+                <div class="bg-stone-200 h-48 rounded-2xl mb-4 flex items-center justify-center text-stone-400 font-medium">📚 도서 표지 이미지</div>
+                <span class="text-xs font-semibold bg-stone-200 text-stone-700 px-2.5 py-1 rounded-full">지난주 토론 도서</span>
+                <h3 class="font-bold text-lg text-book-dark mt-3 mb-1">세이노의 가르침</h3>
+                <p class="text-stone-600 text-sm">세이노 지음 | 2024년 시대을 관통하는 지혜</p>
+            </div>
+            <div class="bg-book-card p-6 rounded-3xl border border-[#EBE3DC]">
+                <div class="bg-stone-200 h-48 rounded-2xl mb-4 flex items-center justify-center text-stone-400 font-medium">📚 도서 표지 이미지</div>
+                <span class="text-xs font-semibold bg-stone-200 text-stone-700 px-2.5 py-1 rounded-full">예정 도서</span>
+                <h3 class="font-bold text-lg text-book-dark mt-3 mb-1">마루이 아주머니</h3>
+                <p class="text-stone-600 text-sm">구도 야스코 지음 | 타인의 삶을 이해하는 따뜻한 시선</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits & Reviews Section -->
+    <section id="benefits" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="bg-book-dark text-stone-100 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+            <div class="max-w-2xl">
+                <span class="text-amber-400 font-semibold text-sm tracking-widest uppercase mb-2 block">Special Benefits</span>
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">등대독서회 멤버를 위한 특별한 지원</h2>
+                <ul class="space-y-4 text-stone-300 text-sm md:text-base mb-8">
+                    <li class="flex items-center gap-3">📚 <strong>도서 지원:</strong> 매월 독서 활동을 위한 도서 구입비 전액 지원</li>
+                    <li class="flex items-center gap-3">☕ <strong>든든한 점심:</strong> 모임 시간 맛있는 점심 식사와 음료 제공</li>
+                    <li class="flex items-center gap-3">🌱 <strong>사내 네트워킹:</strong> 타 부서 동료들과의 자연스러운 소통과 수평적 교류</li>
+                </ul>
+                <blockquote class="bg-white/10 p-4 rounded-2xl border border-white/10 text-stone-200 text-sm italic">
+                    "금요일 오전이 기다려져요. 부서가 다른 분들과 깊은 대화를 나눌 수 있어 회사 생활에 큰 활력이 됩니다." <br>
+                    <span class="not-italic text-xs text-amber-400 mt-2 block">— 경영지원팀 OOO 매니저 후기</span>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section id="apply" class="max-w-5xl mx-auto px-6 py-20 text-center">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-3xl font-bold text-book-dark mb-4">함께 항해를 시작해볼까요?</h2>
+            <p class="text-stone-600 mb-8">책을 통해 일상에 여유를 더하고 싶은 ㈜제주비 임직원 여러분의 많은 참여를 기다립니다.</p>
+            <a href="mailto:hr@jejubi.com" class="inline-block bg-book-dark text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:bg-stone-800 transition">
+                사내 메일로 가입 신청하기
+            </a>
+            <p class="text-xs text-stone-500 mt-4">문의: 인재문화팀 또는 사내 메신저 담당자 앞</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#EBE3DC] bg-[#F4EFEA] py-8 text-center text-stone-500 text-sm">
+        <p>&copy; 2026 ㈜제주비 등대독서회. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
